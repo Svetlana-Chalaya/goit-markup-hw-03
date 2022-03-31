@@ -133,6 +133,16 @@ a {
 }
 
 /*Стили для index.html*/
+/*Контейнер для хедера,
+футера и секций*/
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*Hero*/
 .hero {
   background-color: #2f303a;
