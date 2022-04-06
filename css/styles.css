@@ -26,6 +26,13 @@ body > a {
 /* вторичный цвет фона #F5F4FA; */
 /* цвет подвала #2F303A; */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
 ul {
   padding: 0;
   margin: 0;
@@ -36,7 +43,16 @@ a {
   text-decoration: none;
 }
 
+/* Навигация по сайту */
+
+/*nav*/
+.nav {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
+  margin-right: 93px;
   color: #000000;
   width: 145px;
   font-family: Raleway;
@@ -58,9 +74,24 @@ a {
   letter-spacing: 0.03em;
 }
 
-/* Навигация по сайту */
+
+
+/*Site-nav Studio*/
+
+.site-nav {
+  display: flex; 
+  margin-right: 93px;
+}
+
+.site-nav li:not(:last-child) {
+  margin-right: 50px;
+}
 
 .link-current {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--accent-color);
   width: 49px;
   font-style: normal;
@@ -68,6 +99,7 @@ a {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  
 }
 
 .link.current:hover,
@@ -76,6 +108,10 @@ a {
 }
 
 .link-portfolio {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
   width: 76px;
   font-style: normal;
@@ -83,6 +119,7 @@ a {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  
 }
 
 .link-portfolio:hover,
@@ -91,6 +128,10 @@ a {
 }
 
 .link-contact {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
   width: 68px;
   font-style: normal;
@@ -98,13 +139,22 @@ a {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  
 }
 .link-contact:hover,
 .link-contact:focus {
   color: var(--accent-color);
 }
 
+/*Contact-nav*/
+
+.contact-nav {
+  display: flex;
+  margin-left: auto;
+}
+
 .mailto {
+  margin-right: 50px;
   color: var(--paragraph-text-color);
   width: 135px;
   font-style: normal;
@@ -190,6 +240,16 @@ a {
 }
 
 /*Характеристика*/
+
+.feature-ul {
+  display: flex;
+}
+
+.feature-ul :not(:last-child) {
+  margin-right: 30px;
+}
+
+
 .feature .title {
   margin: 94px 0 0;
   font-weight: 700;
@@ -218,10 +278,6 @@ a {
   letter-spacing: 0.03em;
 }
 
-.work-img {
-  padding-top: 50px;
-  margin: 0 0 94px;
-}
 /*Наша команда*/
 .content {
   background-color: #f5f4fa;
@@ -254,6 +310,10 @@ a {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+}
+.work-img {
+  padding-top: 50px;
+  padding-bottom: 94px;
 }
 
 /*Футер разметка*/
@@ -297,8 +357,13 @@ footer {
 
 /*Стили для portfolio.html*/
 
+
 /*Site-nav*/
 .link-current-one {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
   width: 49px;
   font-style: normal;
@@ -306,6 +371,7 @@ footer {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  
 }
 
 .link-current-one:hover,
@@ -314,6 +380,10 @@ footer {
 }
 
 .link-portfolio-one {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--accent-color);
   width: 76px;
   font-style: normal;
@@ -321,11 +391,17 @@ footer {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  
 }
 
 .link-portfolio-one:hover,
 .link-portfolio-one:focus {
   color: var(--accent-color);
+}
+
+/*List-ul*/
+.list-ul {
+  margin-top: 94px;
 }
 
 /*Button*/
@@ -353,6 +429,15 @@ footer {
 
 /*Список*/
 /*img-link*/
+.img-link {
+  margin-top: 34px;
+  padding-bottom: 94px;
+}
+
+.title {
+  padding-top: 20px;
+}
+
 .img-link .title {
   color: var(--title-text-color);
   width: 322px;
@@ -364,6 +449,7 @@ footer {
 }
 
 .caption {
+  padding-top: 4px;
   color: var(--paragraph-text-color);
   width: 322px;
   font-style: normal;
@@ -372,3 +458,5 @@ footer {
   line-height: 1.9;
   letter-spacing: 0.03em;
 }
+
+
