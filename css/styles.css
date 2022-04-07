@@ -280,13 +280,22 @@ a {
 
 /*Чем мы занимаемся*/
 .work-list {
- margin: 94px 0 0;
+  margin: 94px 0 0;
   margin-bottom: 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.7;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.work-pfoto {
+  display: flex;
+  width: 370px;
+}
+
+.work-pfoto :not(:last-child) {
+  margin-right: 30px;
 }
 
 /*Наша команда*/
@@ -325,6 +334,18 @@ a {
 .work-img {
   padding-top: 50px;
   padding-bottom: 94px;
+}
+
+.content-list-photo {
+  display: flex;
+}
+
+.content-list-photo :not(:last-child) {
+  margin-right: 30px;
+}
+
+.content-title {
+  margin: 0;
 }
 
 /*Футер разметка*/
