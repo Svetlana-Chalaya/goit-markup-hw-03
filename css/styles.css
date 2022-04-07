@@ -213,6 +213,17 @@ a {
   text-transform: uppercase;
 }
 /*Button*/
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .button {
   font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -427,6 +438,15 @@ footer {
   background-color: var(--accent-color);
 }
 
+/*Список фото*/
+/*img-link*/
+.img-link {
+  margin-top: 34px;
+  padding-bottom: 94px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /*Flex contaiter*/
 
 .flex-container {
@@ -435,18 +455,14 @@ footer {
 }
 
 .flex-element {
-  width: 380px;
+  width: 370px;
+  margin-right: 30px;
 }
 
-/*Список*/
-/*img-link*/
-.img-link {
-  margin-top: 34px;
-  padding-bottom: 94px;
-  display: flex;
-  flex-wrap: wrap;
-  width: 380px;
+.flex-element:nth-child(3n) {
+  margin-right: 0;
 }
+
 
 .title {
   padding-top: 20px;
