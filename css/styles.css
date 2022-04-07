@@ -412,7 +412,13 @@ footer {
 
 /*List-ul*/
 .list-ul {
+  display: flex;
   margin-top: 94px;
+  justify-content: center;
+}
+
+.list-ul li:not(:last-child) {
+  margin-right: 8px;
 }
 
 /*Button*/
