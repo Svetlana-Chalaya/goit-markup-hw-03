@@ -80,7 +80,6 @@ a {
 
 .site-nav {
   display: flex; 
-  margin-right: 93px;
 }
 
 .site-nav li:not(:last-child) {
@@ -149,12 +148,15 @@ a {
 /*Contact-nav*/
 
 .contact-nav {
-  display: flex;
   margin-left: auto;
+  display: flex;
+}
+
+.contact-nav li:not(:last-child) {
+margin-right: 50px;
 }
 
 .mailto {
-  margin-right: 50px;
   color: var(--paragraph-text-color);
   width: 135px;
   font-style: normal;
@@ -198,11 +200,11 @@ a {
 /*Hero*/
 .hero {
   background-color: #2f303a;
+  text-align: center;
 }
 
 .hero-title {
-  margin: 0 auto 0;
-  padding-top: 200px;
+  margin: 0 auto;
   color: var(--primary-text-color);
   width: 696px;
   font-weight: 900;
@@ -252,17 +254,24 @@ a {
 
 /*Характеристика*/
 
+.feature {
+  padding-top: 94px;
+}
+
 .feature-ul {
   display: flex;
 }
 
-.feature-ul :not(:last-child) {
+.feature-ul li:not(:last-child) {
   margin-right: 30px;
 }
 
+.feature-ul li {
+  width: 270px;
+}
 
 .feature .title {
-  margin: 94px 0 0;
+  
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
@@ -279,8 +288,12 @@ a {
 }
 
 /*Чем мы занимаемся*/
+.work {
+padding-top: 94px;
+padding-bottom: 94px;
+}
+
 .work-list {
-  margin: 94px 0 0;
   margin-bottom: 0;
   font-weight: 700;
   font-size: 36px;
@@ -291,20 +304,20 @@ a {
 
 .work-pfoto {
   display: flex;
-  width: 370px;
 }
 
-.work-pfoto :not(:last-child) {
+.work-pfoto li:not(:last-child) {
   margin-right: 30px;
 }
 
 /*Наша команда*/
 .content {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .content-list {
-  padding-top: 94px;
   margin: 0;
   font-weight: 700;
   font-size: 36px;
@@ -322,6 +335,15 @@ a {
   letter-spacing: 0.03em;
 }
 
+.title-team {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.lead-list {
+  padding-bottom: 30px;
+}
+
 .lead {
   margin: 0;
   color: var(--paragraph-text-color);
@@ -331,16 +353,12 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.work-img {
-  padding-top: 50px;
-  padding-bottom: 94px;
-}
 
 .content-list-photo {
   display: flex;
 }
 
-.content-list-photo :not(:last-child) {
+.content-list-photo li:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -494,9 +512,9 @@ footer {
   margin-bottom: 0;
 }
 
-.title {
+/*.title {
   padding-top: 20px;
-}
+}*/
 
 .img-link .title {
   color: var(--title-text-color);
