@@ -43,6 +43,13 @@ a {
   text-decoration: none;
 }
 
+/*Header*/
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 /* Навигация по сайту */
 
 /*nav*/
@@ -51,8 +58,11 @@ a {
   align-items: center;
 }
 
-.logo {
+.logo-hero {
   margin-right: 93px;
+}
+
+.logo {
   color: #000000;
   width: 145px;
   font-family: Raleway;
@@ -74,12 +84,10 @@ a {
   letter-spacing: 0.03em;
 }
 
-
-
 /*Site-nav Studio*/
 
 .site-nav {
-  display: flex; 
+  display: flex;
 }
 
 .site-nav li:not(:last-child) {
@@ -98,7 +106,6 @@ a {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  
 }
 
 .link.current:hover,
@@ -118,7 +125,6 @@ a {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  
 }
 
 .link-portfolio:hover,
@@ -138,7 +144,6 @@ a {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  
 }
 .link-contact:hover,
 .link-contact:focus {
@@ -153,17 +158,18 @@ a {
 }
 
 .contact-nav li:not(:last-child) {
-margin-right: 50px;
+  margin-right: 50px;
 }
 
 .mailto {
   color: var(--paragraph-text-color);
-  width: 135px;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .mailto:hover,
@@ -179,6 +185,9 @@ margin-right: 50px;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .phone:hover,
@@ -201,6 +210,8 @@ margin-right: 50px;
 .hero {
   background-color: #2f303a;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -256,6 +267,7 @@ margin-right: 50px;
 
 .feature {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .feature-ul {
@@ -271,7 +283,6 @@ margin-right: 50px;
 }
 
 .feature .title {
-  
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
@@ -289,8 +300,7 @@ margin-right: 50px;
 
 /*Чем мы занимаемся*/
 .work {
-padding-top: 94px;
-padding-bottom: 94px;
+  margin-bottom: 94px;
 }
 
 .work-list {
@@ -327,7 +337,6 @@ padding-bottom: 94px;
 }
 
 .content .title {
-  margin: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
@@ -337,7 +346,7 @@ padding-bottom: 94px;
 
 .title-team {
   padding-top: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 .lead-list {
@@ -363,7 +372,7 @@ padding-bottom: 94px;
 }
 
 .content-title {
-  margin: 0;
+  margin-bottom: 10px;
 }
 
 /*Футер разметка*/
@@ -407,7 +416,6 @@ footer {
 
 /*Стили для portfolio.html*/
 
-
 /*Site-nav*/
 .link-current-one {
   display: block;
@@ -421,7 +429,6 @@ footer {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  
 }
 
 .link-current-one:hover,
@@ -441,7 +448,6 @@ footer {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  
 }
 
 .link-portfolio-one:hover,
@@ -536,5 +542,3 @@ footer {
   line-height: 1.9;
   letter-spacing: 0.03em;
 }
-
-
