@@ -162,6 +162,8 @@ a {
 }
 
 .mailto {
+  display: block;
+
   color: var(--paragraph-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -178,6 +180,8 @@ a {
 }
 
 .phone {
+  display: block;
+
   color: var(--paragraph-text-color);
   width: 122px;
   font-style: normal;
@@ -304,7 +308,7 @@ a {
 }
 
 .work-list {
-  margin-bottom: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.7;
@@ -328,7 +332,7 @@ a {
 }
 
 .content-list {
-  margin: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.7;
@@ -377,7 +381,13 @@ a {
 
 /*Футер разметка*/
 footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
+}
+
+.logo-footer {
+  margin-bottom: 20px;
 }
 
 .logo-studio {
@@ -389,6 +399,10 @@ footer {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+}
+
+.address-footer li:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .search {
@@ -414,9 +428,9 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/*------------Стили для portfolio.html-------------*/
+/*------------Стили для PORTFOLIO.html-------------*/
 
-/*Site-nav*/
+/*----Site-nav-----*/
 .link-current-one {
   display: block;
   padding-top: 32px;
@@ -455,10 +469,20 @@ footer {
   color: var(--accent-color);
 }
 
-/*List-ul*/
+/*---HEADER----*/
+header {
+  border-bottom: 1px solid #eeeeee;
+}
+
+/*---SECTION----*/
+.section-hero-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/*------List-ul--------*/
 .list-ul {
   display: flex;
-  margin-top: 94px;
   justify-content: center;
 }
 
@@ -466,7 +490,7 @@ footer {
   margin-right: 8px;
 }
 
-/*Button*/
+/*-----Button main Section---*/
 .button {
   color: var(--title-text-color);
   background-color: #f5f4fa;
@@ -489,21 +513,15 @@ footer {
   background-color: var(--accent-color);
 }
 
-/*Список фото*/
-/*img-link*/
+/*-----Список фото---*/
+/*---img-link----*/
 .img-link {
   margin-top: 34px;
-  padding-bottom: 94px;
   display: flex;
   flex-wrap: wrap;
 }
 
-/*Flex contaiter*/
-
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-}
+/*Flex element*/
 
 .flex-element {
   width: 370px;
@@ -535,6 +553,7 @@ footer {
 
 .caption {
   padding-top: 4px;
+  padding-bottom: 20px;
   color: var(--paragraph-text-color);
   width: 322px;
   font-style: normal;
@@ -542,4 +561,8 @@ footer {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
+}
+
+.caption {
+  border-bottom: 1px solid #eeeeee;
 }
