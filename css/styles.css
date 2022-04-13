@@ -267,7 +267,7 @@ a {
   background-color: #188ce8;
 }
 
-/*Характеристика*/
+/*-----Характеристика-----*/
 
 .feature {
   padding-top: 94px;
@@ -302,7 +302,7 @@ a {
   letter-spacing: 0.03em;
 }
 
-/*Чем мы занимаемся*/
+/*----Чем мы занимаемся-----*/
 .work {
   margin-bottom: 94px;
 }
@@ -324,7 +324,7 @@ a {
   margin-right: 30px;
 }
 
-/*Наша команда*/
+/*----Наша команда----*/
 .content {
   background-color: #f5f4fa;
   padding-top: 94px;
@@ -535,6 +535,16 @@ header {
 
 .flex-element:nth-last-child(-n + 3) {
   margin-bottom: 0;
+}
+
+/*---img-portfolio---*/
+.img-portfolio {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.title-second {
+  margin-bottom: 4px;
 }
 
 /*.title {
