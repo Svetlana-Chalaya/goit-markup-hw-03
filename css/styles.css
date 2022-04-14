@@ -304,7 +304,7 @@ a {
 
 /*----Чем мы занимаемся-----*/
 .work {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .work-list {
@@ -387,6 +387,7 @@ footer {
 }
 
 .logo-footer {
+  display: block;
   margin-bottom: 20px;
 }
 
@@ -490,6 +491,11 @@ header {
   margin-right: 8px;
 }
 
+.button {
+  padding: 6px 22px;
+  border: none;
+}
+
 /*-----Button main Section---*/
 .button {
   color: var(--title-text-color);
@@ -539,7 +545,10 @@ header {
 
 /*---img-portfolio---*/
 .img-portfolio {
-  padding-top: 20px;
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .title-second {
@@ -552,8 +561,6 @@ header {
 
 .img-link .title {
   color: var(--title-text-color);
-  width: 322px;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -561,10 +568,7 @@ header {
 }
 
 .caption {
-  padding-bottom: 20px;
   color: var(--paragraph-text-color);
-  width: 322px;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
@@ -572,5 +576,4 @@ header {
 }
 
 .caption {
-  border-bottom: 1px solid #eeeeee;
 }
